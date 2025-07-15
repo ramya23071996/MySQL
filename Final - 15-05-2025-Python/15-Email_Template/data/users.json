@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Ramya",
+        "email": "ramya@example.com",
+        "product": "DesignDash"
+    },
+    {
+        "name": "Karthik",
+        "email": "karthik@example.com",
+        "product": "CodeCraft"
+    }
+]

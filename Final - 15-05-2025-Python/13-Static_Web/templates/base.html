@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+    {% for item in menu %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "Ramya",
+  "title": "Full Stack Developer",
+  "email": "ramyasowmiya96@yahoo.com",
+  "skills": ["HTML", "CSS", "JavaScript", "Python"],
+  "experience": [
+    {
+      "company": "Vetri Technology Solutions",
+      "role": "Python Full Stack Developer",
+      "duration": "Jan 2025 - Present"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice - {{ invoice_number }}</title>
+    <style>
+        body { font-family: Arial; padding: 2rem; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    </style>
+</head>
+<body>
+    <h2>Invoice #{{ invoice_number }}</h2>
+    <p><strong>Date:</strong> {{ date }}</p>
+    <p><strong>Client:</strong> {{ client_name }}</p>
+
+    <table>
+        <thead><tr><th>Item</th><th>Qty</th><th>Price</th></tr></thead>
+        <tbody>
+        {% for item in items %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>₹{{ item.price }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <p><strong>Total:</strong> ₹{{ total }}</p>
+</body>
+</html>
